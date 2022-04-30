@@ -1,3 +1,22 @@
+:root {
+    /* Colours */
+    --colour-bg: rgb(244, 243, 249);
+    --colour-text: rgb(32, 32, 32);
+
+    /* Typography */
+    font-family: colfax-web, sans-serif;
+    font-weight: 400;
+    font-style: normal
+        /* --font-display: 'Lora', 'serif';
+    --font-body: 'Josefin Sans', sans-serif; */
+
+        /* body = tag
+    .body = class
+     #body = id */
+
+}
+
+
 .product {
     background-color: yellow;
     width: 6rem;
@@ -11,6 +30,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+
 }
 
 .products-list .product:nth-child(3) {
