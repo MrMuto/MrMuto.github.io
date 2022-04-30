@@ -1,0 +1,21 @@
+Colfax Bold
+
+font-family: colfax-web, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Colfax Bold Italic
+font-family: colfax-web, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+
+Colfax Regular
+font-family: colfax-web, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Colfax Italic
+font-family: colfax-web, sans-serif;
+font-weight: 400;
+font-style: italic;
