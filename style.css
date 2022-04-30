@@ -27,7 +27,15 @@ body {
 
 .top-navbar {
     background-color: var(--colour-bg);
+    display: flex;
         /* background-color: black; */
+}
+
+.bottom-navbar{
+    background-color: var(--colour-bg);
+    display: flex;
+    text-align:start
+
 }
 
 .product {
