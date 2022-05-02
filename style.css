@@ -1,4 +1,6 @@
 
+
+
 :root {
     /* Colours */
     --colour-bg: #A3C1D1;
@@ -16,6 +18,16 @@
 }
 
 
+
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
 body {
 
     background-color: var(--colour-bg);
@@ -25,10 +37,22 @@ body {
 
 }
 
+
+.logo {
+    justify-content: flex-end;
+    
+    display: flex;
+    position: absolute;
+
+    right: 1px;
+}
+
 .top-navbar {
     justify-content: center;
     background-color: var(--colour-bg);
-    display: flex
+    display: flex;
+    top: 8em;
+    right: 8em;
 }
 
 .bottom-navbar{
