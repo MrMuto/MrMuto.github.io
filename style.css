@@ -29,14 +29,12 @@ body {
     justify-content: center;
     background-color: var(--colour-bg);
     display: flex
-    
-        /* background-color: black; */
 }
 
 .bottom-navbar{
+    justify-content: right;
     background-color: var(--colour-bg);
     display: flex;
-    text-align:start
 
 }
 
