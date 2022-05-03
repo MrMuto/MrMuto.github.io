@@ -28,6 +28,7 @@ html {
   }
 
 
+
 body {
 
     background-color: var(--colour-bg);
@@ -36,6 +37,9 @@ body {
     /* text-align: center; */
 
 }
+
+
+
 
 
 .logo {
@@ -64,15 +68,28 @@ body {
 
 .product {
     background-color: yellow;
-    width: 6rem;
-    height: 6rem;
+    width: 400 px;
+    height: 400 px;
     /* margin: 0.5rem; */
     /* flex: 1; */
     padding: 1rem;
 }
 
-.product-name > .img-container {
-    padding: 2em;
+
+.img-container {
+    max-width: 400px;
+}
+
+.img-container > img {
+    width: 100%;
+    display: flex;
+}
+
+
+
+.img-container > img {
+    /* background-color: red; */
+    width: 100%;
 }
 
 .products-list {
@@ -82,8 +99,13 @@ body {
 
 }
 
+
+.products-list-container {
+    /* background-color: black; */
+}
+
 .products-list .product:nth-child(3) {
-    background-color: red;
+    background-color: rgb(17, 0, 255);
     /* flex: 1 0; */
     /* width: 9rem; */
 }
