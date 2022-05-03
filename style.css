@@ -71,6 +71,10 @@ body {
     padding: 1rem;
 }
 
+.product-name > .img-container {
+    padding: 2em;
+}
+
 .products-list {
     display: flex;
     flex-wrap: wrap;
