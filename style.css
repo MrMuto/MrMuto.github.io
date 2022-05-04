@@ -38,16 +38,10 @@ body {
 
 }
 
-
-
-
-
 .logo {
     justify-content: flex-end;
-    
     display: flex;
     position: absolute;
-
     right: 1px;
 }
 
@@ -85,8 +79,6 @@ body {
     display: flex;
 }
 
-
-
 .img-container > img {
     /* background-color: red; */
     width: 100%;
@@ -100,12 +92,9 @@ body {
 }
 
 
-.products-list-container {
-    /* background-color: black; */
-}
-
+/* Gabriele's Code: Picks a Child Element and Alters it
 .products-list .product:nth-child(3) {
     background-color: rgb(17, 0, 255);
-    /* flex: 1 0; */
-    /* width: 9rem; */
-}
+    flex: 1 0; 
+    width: 9rem; */
+
