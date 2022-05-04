@@ -79,8 +79,14 @@ body {
      min-width: 50%;
 }
 
+/* Tried to implement a child selector to colour the banners */
+.sidebar-container > .sidebar > div:nth-child(1){
+    background-color: blue;
+
+}
+
 .product {
-    background-color: yellow;
+    background-color: rgb(255, 147, 7);
     width: 400 px;
     height: 400 px;
     /* margin: 0.5rem; */
