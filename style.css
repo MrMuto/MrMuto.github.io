@@ -60,6 +60,7 @@ body {
 
 .sidebar-container{
     writing-mode: vertical-rl;
+    text-orientation: mixed;
     display: flex;
     flex-wrap:wrap;
     flex-direction: row;
