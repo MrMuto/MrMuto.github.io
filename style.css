@@ -60,6 +60,25 @@ body {
 
 }
 
+
+.sidebar-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    flex-basis: 40rem;
+    flex-grow: 1; 
+}
+
+.not-sidebar {
+    flex-basis: 0;
+     /* Unclear about flex-grow 999 */
+     flex-grow: 999; 
+     min-width: 50%;
+}
+
 .product {
     background-color: yellow;
     width: 400 px;
