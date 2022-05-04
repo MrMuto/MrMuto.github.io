@@ -67,6 +67,7 @@ body {
     /* margin: 0.5rem; */
     /* flex: 1; */
     padding: 1rem;
+    flex: wrap;
 }
 
 
