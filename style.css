@@ -7,22 +7,23 @@
     font-family: colfax-web, sans-serif;
     font-weight: 400;
     font-style: normal
-
-
         /* body = tag
     .body = class
      #body = id */
+
 }
 
 
 
 html {
     box-sizing: border-box;
-  }
+}
 
-  *, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
+}
 
 
 
@@ -32,6 +33,12 @@ body {
     color: var(--colour-text);
     font-family: var(--font-body);
     /* text-align: center; */
+    font-size: var(--text-base-size);
+    font-family: var(--font-primary);
+    color: var(--colour-primary);
+    margin-left: 2em;
+    margin-right: 2em;
+    
 
 }
 
@@ -40,6 +47,7 @@ body {
     display: flex;
     position: absolute;
     right: 1px;
+    width: 10rem;
 }
 
 .top-navbar {
@@ -50,7 +58,7 @@ body {
     right: 8em;
 }
 
-.bottom-navbar{
+.bottom-navbar {
     justify-content: right;
     background-color: var(--colour-bg);
     display: flex;
@@ -58,56 +66,36 @@ body {
 }
 
 
-.sidebar-container{
-    writing-mode: vertical-rl;
+.sidebar-container {
+    display: block;
+    writing-mode: vertical-lr;
     text-orientation: mixed;
-    display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 1rem;
 }
 
-.sidebar {
+/* .sidebar {
+    display: block;
     flex-basis: 20rem;
-    flex-grow: 1; 
-}
+    flex-grow: 1;
+    height: 20rem;
+} */
 
 .not-sidebar {
     flex-basis: 0;
-     /* Unclear about flex-grow 999 */
-     flex-grow: 999; 
-     min-width: 50%;
+    flex-grow: 999;
+    min-width: 50%;
 }
 
 /* Tried to implement a child selector to colour the banners */
-.sidebar-container > .sidebar > div:nth-child(1){
-    background-color: blue;
+.sidebar-container>.sidebar>div:nth-child(1) {
+    background-color: rgb(146, 146, 163);
 
 }
 
-.product {
-    background-color: rgb(255, 147, 7);
-    width: 400 px;
-    height: 400 px;
-    /* margin: 0.5rem; */
-    /* flex: 1; */
-    padding: 1rem;
-    flex: wrap;
-}
+.products-list-container {
 
-
-.img-container {
-    max-width: 400px;
-}
-
-.img-container > img {
-    width: 100%;
-    display: flex;
-}
-
-.img-container > img {
-    /* background-color: red; */
-    width: 100%;
 }
 
 .products-list {
@@ -119,9 +107,31 @@ body {
 }
 
 
+.product {
+    background-color: rgb(255, 147, 7);
+    margin: 0.5rem; 
+    padding: 1rem;
+}
+
+
+.img-container {
+    max-width: 400px;
+}
+
+.img-container>img {
+    width: 100%;
+    display: flex;
+}
+
+.img-container>img {
+    /* background-color: red; */
+    width: 100%;
+}
+
+
+
 /* Gabriele's Code: Picks a Child Element and Alters it
 .products-list .product:nth-child(3) {
     background-color: rgb(17, 0, 255);
     flex: 1 0; 
     width: 9rem; */
-
