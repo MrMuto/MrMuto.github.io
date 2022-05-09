@@ -45,8 +45,7 @@ body {
 .logo {
     justify-content: flex-end;
     display: flex;
-    position: absolute;
-    right: 1px;
+    position: relative;
     width: 10rem;
 }
 
