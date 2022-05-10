@@ -135,6 +135,12 @@ body {
     width:400px;
   }
 
+  .Group-2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+  }
+
 
 /* .img-container {
     display: flex;
