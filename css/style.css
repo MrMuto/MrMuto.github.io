@@ -4,14 +4,23 @@
     --colour-text: rgb(32, 32, 32);
 
     /* Typography */
-    font-family: colfax-web, sans-serif;
+    /* font-family: colfax-web, sans-serif;
     font-weight: 400;
-    font-style: normal
+    font-style: normal */
+
+    --font-primary: colfax-web, sans-serif;
+    --taxt-base-size: 1rem;
+
+    --text-scale-ratio: 1.2;
+    --text-xxl: 4rem;
+    --text-xl: 3rem;
+    --text-lg: 2rem;
+    --text-md: 1.4rem;
+}
         /* body = tag
     .body = class
      #body = id */
-
-}
+     
 
 
 
