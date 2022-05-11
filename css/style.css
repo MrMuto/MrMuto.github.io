@@ -1,7 +1,10 @@
 :root {
     /* Colours */
     --colour-bg: #A3C1D1;
-    --colour-text: rgb(32, 32, 32);
+    --colour-text: #000000;
+    --colour-primary: #394149;
+    --colour-secondary: white;
+    --colour-accent: #F56526; 
 
     /* Typography */
     /* font-family: colfax-web, sans-serif;
@@ -86,15 +89,8 @@ body {
     border-color: var(--colour-accent);
 }
 
-/* .top-navbar { SS
-    justify-content: center;
-    background-color: var(--colour-bg);
-    display: flex;
-    top: 8em;
-    right: 8em;
-} */
 
-.top-navbar {
+.cluster {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -107,10 +103,16 @@ body {
 }
 
 .bottom-navbar {
-    justify-content: right;
-    background-color: var(--colour-bg);
     display: flex;
+    flex-wrap: wrap;
+    justify-content:right;
+    align-items: center;
+    background-color: var(--colour-bg);
+   
+}
 
+.bottom-navbar > * {
+    margin: 3rem
 }
 
 /* 
@@ -128,21 +130,21 @@ body {
     flex-basis: 20rem;
     flex-grow: 1;
 
-    /* height: 20rem; */
+ 
 }
 
 .not-sidebar {
 
     flex-basis: 0;
     flex-grow: 999;
-    /* min-width: 50%; */
+ 
 }
 
 /* Tried to implement a child selector to colour the banners */
-.sidebar-container>.sidebar>div:nth-child(1) {
+/* .sidebar-container>.sidebar>div:nth-child(1) {
     background-color: rgb(146, 146, 163);
 
-}
+} */
 
 .Group-1 {
     margin-top: 100px;
