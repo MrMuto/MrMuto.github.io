@@ -4,7 +4,7 @@
     --colour-text: #000000;
     --colour-primary: #394149;
     --colour-secondary: white;
-    --colour-accent: #F56526; 
+    --colour-accent: #F56526;
 
     /* Typography */
     /* font-family: colfax-web, sans-serif;
@@ -24,8 +24,6 @@
 /* body = tag
     .body = class
      #body = id */
-
-
 
 
 html {
@@ -105,97 +103,45 @@ body {
 .bottom-navbar {
     display: flex;
     flex-wrap: wrap;
-    justify-content:right;
+    justify-content: right;
     align-items: center;
     background-color: var(--colour-bg);
-   
+
 }
 
-.bottom-navbar > * {
+.bottom-navbar>* {
     margin: 3rem
 }
 
-/* 
-.sidebar-container {
-    display: block;
-    writing-mode: vertical-lr;
-    text-orientation: mixed;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 1rem;
-} */
 
 .sidebar {
-    /* display: block; */
     flex-basis: 20rem;
     flex-grow: 1;
 
- 
+
 }
 
 .not-sidebar {
 
     flex-basis: 0;
     flex-grow: 999;
- 
+
 }
 
-/* Tried to implement a child selector to colour the banners */
-/* .sidebar-container>.sidebar>div:nth-child(1) {
-    background-color: rgb(146, 146, 163);
-
-} */
-
-.Group-1 {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.Group-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.product-card {
-    padding: 20px;
-    margin-bottom: 20px;
-    justify-self: center;
-}
-
-.product-card>img {
-    width: 100%;
-    max-width: 400px;
-}
-
-.Group-1>.product-card {
-    width: 400px;
-}
-
-.Group-2 {
+.grid-layout {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
 
-/* .img-container {
-    display: flex;
-    flex-direction: row;
-    margin:  1%;
-} */
+.product-card {
+    padding: 0.8 em;
+    margin-bottom: 0.8 em;
+    justify-self: center;
+}
 
-
-/* .img-container>img {
+.product-card>img {
     width: 100%;
-} */
-
-
-
-/* Gabriele's Code: Picks a Child Element and Alters it
-.products-list .product:nth-child(3) {
-    background-color: rgb(17, 0, 255);
-    flex: 1 0; 
-    width: 9rem; */
+    max-width: 30em;
+}
