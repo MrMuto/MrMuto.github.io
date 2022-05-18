@@ -114,12 +114,35 @@ body {
 }
 
 
-.sidebar {
+.sidebar-container {
     flex-basis: 20rem;
     flex-grow: 1;
-
+    position: static;
+    height: 100%;
 
 }
+
+.sidebar-container ul {
+    list-style-type: none;
+    background-color: rgb(167, 43, 43);
+   
+
+} 
+
+
+.sidebar-container ul li{
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+
+    
+} 
+
+li a:hover {
+    background-color: #000000;
+}
+
 
 .not-sidebar {
 
@@ -132,6 +155,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    padding: 1em;
 }
 
 
