@@ -12,7 +12,7 @@
     font-style: normal */
 
     --font-primary: colfax-web, sans-serif;
-    --taxt-base-size: 1rem;
+    --text-base-size: 1rem;
 
     --text-scale-ratio: 1.2;
     --text-xxl: 4rem;
@@ -86,8 +86,6 @@ body {
     background-color: var(--colour-accent);
     border-color: var(--colour-accent);
 }
-
-
 
 
 
@@ -267,4 +265,29 @@ li a:hover {
 .product-card>img {
     width: 100%;
     max-width: 30em;
+}
+
+
+#trackInfo ul {
+    padding: 0px;
+    list-style-type: none;
+
+}
+
+.album-about {
+    font-size: 1em;
+    padding-top: 1em;
+}
+
+.product-header {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+#add-to-cart-product-page {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
