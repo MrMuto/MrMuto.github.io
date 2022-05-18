@@ -88,6 +88,105 @@ body {
 }
 
 
+
+
+
+.textInput {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
+form{
+  width: 600px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.terms{
+  grid-column: 2 / 3;
+}
+.buttons{
+  display: flex;
+  justify-content: right;
+  grid-column: 1/3;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+}
+
+/* .btn-primary {
+    background-color: #0D6EFF;
+    color: white;
+} */
+
+.btn-primary:hover {
+    background-color: #0E64E4;
+}
+
+.btn-primary--hover {
+    background-color: #0E64E4;
+}
+
+.btn-primary:active {
+    background-color: #0151C8;
+}
+
+.btn-primary--active {
+    background-color: #0151C8;
+}
+
+.btn-primary:focus {
+    background-color: #1070FF;
+    border: 2px solid #7CAFFC;
+    box-shadow: 0px 0px 5px #adceff;
+}
+
+.btn-primary--focus {
+    background-color: #1070FF;
+    border: 2px solid #7CAFFC;
+    box-shadow: 0px 0px 5px #adceff;
+}
+
+.btn-secondary {
+    background-color: #F3F8FF;
+    color: #67A3FF;
+}
+
+.btn-secondary:hover {
+    background-color: #E8F1FF;
+}
+
+.btn-secondary--hover {
+    background-color: #E8F1FF;
+}
+
+.btn-secondary:active {
+    background-color: #DBEAFF;
+}
+
+.btn-secondary--active {
+    background-color: #DBEAFF;
+}
+
+.btn-secondary:focus {
+    background-color: #F3F8FF;
+    border: 2px solid #92BEFF;
+    box-shadow: 0px 0px 5px rgb(189, 213, 249);
+}
+
+.btn-secondary--focus {
+    background-color: #F3F8FF;
+    border: 2px solid #92BEFF;
+    box-shadow: 0px 0px 5px rgb(189, 213, 249);
+}
+
+
 .cluster {
     display: flex;
     flex-wrap: wrap;
