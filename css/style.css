@@ -1,7 +1,7 @@
 :root {
     /* Colours */
     --colour-bg: #e5e9ec;
-    --colour-text: #000000;
+    --colour-text: #777;
     --colour-primary: #394149;
     --colour-secondary: white;
     --colour-accent: #F56526;
@@ -58,10 +58,6 @@ body {
     display: flex;
     position: relative;
     width: 10rem;
-}
-
-.footer-logo {
-    justify-content: flex-start;
 }
 
 .btn {
@@ -314,3 +310,20 @@ li a:hover {
     padding-top: 1em;
     padding-bottom: 1em;
 }
+
+
+.footer-container > *{
+    display: inline;
+    margin:1em;
+}
+
+#footerlogo{
+    background-color: red;
+    align-items: center;
+}
+
+/* .footer > * {
+    align-items: right;
+    display: inline block;
+    margin: 1em;
+} */
