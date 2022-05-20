@@ -54,12 +54,15 @@ body {
 }
 
 .logo {
-    justify-content: flex-end;
+    justify-content: flex-start;
     display: flex;
     position: relative;
     width: 10rem;
 }
 
+.footer-logo {
+    justify-content: flex-start;
+}
 
 .btn {
     padding: 1rem;
@@ -96,19 +99,20 @@ body {
 }
 
 
-form{
-  width: 600px;
-  display: grid;
-  grid-template-columns: 200px 1fr;
+form {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
 }
 
-.terms{
-  grid-column: 2 / 3;
+.terms {
+    grid-column: 2 / 3;
 }
-.buttons{
-  display: flex;
-  justify-content: right;
-  grid-column: 1/3;
+
+.buttons {
+    display: flex;
+    justify-content: right;
+    grid-column: 1/3;
 }
 
 .btn {
@@ -222,19 +226,19 @@ form{
 .sidebar-container ul {
     list-style-type: none;
     background-color: rgb(167, 43, 43);
-   
-
-} 
 
 
-.sidebar-container ul li{
+}
+
+
+.sidebar-container ul li {
     display: block;
     color: white;
     padding: 8px 16px;
     text-decoration: none;
 
-    
-} 
+
+}
 
 li a:hover {
     background-color: #000000;
@@ -249,11 +253,7 @@ li a:hover {
 }
 
 
-.product-card a{
-    width: 100% !important;
-    height: 100% !important;
-  }
-  
+
 
 .product-layout {
     display: flex;
@@ -276,12 +276,13 @@ li a:hover {
 
 }
 
-.product-card>img {
-    width: 100%;
-    max-width: 30em;
+.product-card a{
+    width: 100% !important;
+    height: 100% !important;
 }
 
-.product-card .product-description{
+
+.product-card .product-description {
     width: 100%;
     display: flex;
     flex-direction: row;
