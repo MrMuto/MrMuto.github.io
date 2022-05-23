@@ -2,38 +2,49 @@
 <html lang="en">
 
 <head>
-    <style>
-        @import url("https://use.typekit.net/rxl8iwj.css");
-    </style>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Page</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
+  <style>
+    @import url("https://use.typekit.net/rxl8iwj.css");
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
 
-    <h2>Form Draft</h2>
-    <form>
-        <label>Name:</label>
-        <input type="text" class="textInput" id="signup__name" name="name"/>
+  <form action="success.html" method="GET">
+    
+    <div>
+      <label>Email:</label>
+      <input type="email" class="textInput" id="signup__email" name="email" />
+    </div>
 
 
-        <label>Email:</label>
-        <input type="email" class="textInput"  id="signup__email"  name="email"/>
+    <div>
+      <label for="first-name-id" > First Name:</label>
+      <input type="text" class="textInput" id="first-name-id" name="first-name" />
+    </div>
 
-        <label>Password:</label>
-        <input type="password" class="textInput"  id="signup__pwd" name = "pwd"/>
+    <div>
+      <label for="last-name-id" >Last Name:</label>
+      <input type="text" class= "textInput" id="last-name-id" name="last-name" />
+    </div>
 
-        <div class="terms">
-          <input type="checkbox" />
-          <label>I agree to the terms and privacy policy</label>
-        </div>
+    <!-- <label>Password:</label>
+        <input type="password" class="textInput"  id="signup__pwd" name = "pwd"/> -->
 
-        <div class="buttons">
-          <a href="#" class="btn btn-primary">Sign Up</a>
-          <a href="#" class="btn btn-secondary">Sign In</a>
-        </div>
+    <div class="terms">
+      <input type="checkbox" />
+      <label>I agree to the terms and privacy policy</label>
+    </div>
 
-    </form>
+    <div class="buttons">
+      <a href="#" class="btn btn-primary">Confirm & Process Payment</a>
+      <!-- <a href="#" class="btn btn-secondary">Sign In</a> -->
+    </div>
+
+    <div></div>
+
+  </form>
 
 </head>
