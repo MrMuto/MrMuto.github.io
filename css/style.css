@@ -87,24 +87,6 @@ body {
 }
 
 
-
-.textInput {
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
-    font-size: 0.9rem;
-}
-
-
-form {
-    width: 600px;
-    display: inline-flexbox;
-    grid-template-columns: 200px 1fr;
-}
-
-.terms {
-    grid-column: 2 / 3;
-}
-
 .buttons {
     display: flex;
     justify-content: right;
@@ -341,3 +323,41 @@ li a:hover {
     align-items: end;
 } */
 
+
+
+
+/* Form fills: Styling the text input */
+
+input, textarea, select {
+    width: 20em;
+    padding: 0.90em;
+    border-radius: 0.2em;
+    border: 1px rgb(170, 170, 170) solid;
+    background-color: white;
+    vertical-align: middle;
+}
+
+
+.textInput {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
+form {
+    margin: auto;
+    width: 15em;
+    display: inline-flexbox;
+    grid-template-columns: 200px 1fr;
+}
+
+label{
+    display: block;
+    margin-top: 0;
+}
+
+
+/* .terms {
+    grid-column: 2 / 3;
+} */
