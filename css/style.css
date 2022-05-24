@@ -167,7 +167,7 @@ body {
 }
 
 
-.cluster {
+.header-cluster {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -175,7 +175,7 @@ body {
     flex-direction: row;
 }
 
-.cluster>* {
+.header-cluster>* {
     margin: 0.5rem;
 }
 
@@ -229,7 +229,6 @@ li a:hover {
     flex-grow: 999;
 
 }
-
 
 
 .product-layout {
@@ -361,6 +360,10 @@ label{
     margin-top: 0;
 }
 
+#secure-icon {
+    width: 5em;
+    height: 5em;
+}
 
 
 /* .terms {
