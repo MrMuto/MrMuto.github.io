@@ -262,7 +262,7 @@ li a:hover {
 }
 
 
-.product-card > a > img {
+.product-card a img {
     width: 100%;
     max-width: 30em;
 }
