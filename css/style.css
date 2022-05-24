@@ -248,15 +248,19 @@ li a:hover {
     background-color: #ffffff;
     display: flex;
     flex-wrap: nowrap;
-    flex: 0 1;
+    /* flex: 0 1; */
     gap: 2rem;
 
 }
 
 .product-card a{
-    width: 100% !important;
-    height: 100% !important;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    color: rgb(42, 67, 175);
+    font-size: 2em;
 }
+
 
 .product-card > a > img {
     width: 100%;
@@ -356,6 +360,7 @@ label{
     display: block;
     margin-top: 0;
 }
+
 
 
 /* .terms {
