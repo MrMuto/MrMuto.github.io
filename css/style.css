@@ -167,19 +167,19 @@ body {
 }
 
 
-.header-cluster {
+.main-header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    background-color: #fdad00;
+    background-color: #ffd86e;
     padding:.25em 0;
     margin: 1em;
 
 }
 
-.header-cluster>* {
+.main-header> * {
     margin: 0.5rem;
 }
 
@@ -232,6 +232,12 @@ li a:hover {
     flex-basis: 0;
     flex-grow: 999;
 
+}
+
+.titles {
+    background-color: red;
+    margin-top: 1.5em;
+    margin: 20 em;
 }
 
 
