@@ -7,13 +7,9 @@
     --colour-accent: #F56526;
 
     /* Typography */
-    /* font-family: colfax-web, sans-serif;
-    font-weight: 400;
-    font-style: normal */
 
     --font-primary: colfax-web, sans-serif;
     --text-base-size: 1rem;
-
     --text-scale-ratio: 1.2;
     --text-xxl: 4rem;
     --text-xl: 3rem;
@@ -37,7 +33,6 @@ html {
 }
 
 
-
 body {
 
     background-color: var(--colour-bg);
@@ -54,7 +49,7 @@ body {
 }
 
 .logo {
-    justify-content: flex-start;
+    justify-content:end;
     display: flex;
     position: relative;
     width: 10rem;
@@ -168,13 +163,14 @@ body {
 
 
 .main-header {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     flex-direction: row;
     background-color: #ffd86e;
-    padding:.25em 0;
+    padding: 1.25em 0;
     margin: 1em;
 
 }
@@ -183,18 +179,18 @@ body {
     margin: 0.5rem;
 }
 
+/* 
 .bottom-navbar {
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
     align-items: center;
     background-color: var(--colour-bg);
-
 }
 
 .bottom-navbar>* {
     margin: 3rem
-}
+} */
 
 
 .sidebar-container {
@@ -208,7 +204,6 @@ body {
 .sidebar-container ul {
     list-style-type: none;
     background-color: rgb(167, 43, 43);
-
 
 }
 
@@ -234,8 +229,8 @@ li a:hover {
 
 }
 
-.titles {
-    background-color: red;
+.header-titles {
+    margin-left: 1.5em;
     margin-top: 1.5em;
     margin: 20 em;
 }
@@ -252,7 +247,7 @@ li a:hover {
 .product-card {
     padding: 1.5rem;
     justify-self: center;
-    width: 20rem;
+    width: 18rem;
     flex-direction: column;
     background-color: #ffffff;
     display: flex;
@@ -311,7 +306,12 @@ li a:hover {
 
 
 .main-footer {
-    background-color: #fdad00;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    /* background-color: var(--colour-bg); */
+    background-color: #ffd86e;
     padding:.25em 0;
     margin: 1em;
 
@@ -331,27 +331,6 @@ li a:hover {
 .footer-nav li {
     padding: 0 .5em;
 }
-
-
-
-/* .footer-container {
-    display: inline-flex;
-    flex-grow: 1;
-    text-align: end;
-} */
-
-
-/* .footer {
-    align-items: right;
-    display: inline block;
-    margin: 1em;
-    text-decoration: none;
-} */
-
-/* #footerlogo{
-    background-color: red;
-    align-items: end;
-} */
 
 
 /* Form fills: Styling the text input */
