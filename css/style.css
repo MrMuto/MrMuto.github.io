@@ -173,6 +173,10 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    background-color: #fdad00;
+    padding:.25em 0;
+    margin: 1em;
+
 }
 
 .header-cluster>* {
@@ -308,13 +312,6 @@ li a:hover {
 }
 
 
-
-.main-footer {
-    background-color: #56CCF2;
-    color: white;
-    padding: .25em 0;
-}
-
 .main-footer-container {
     display: flex;
     align-items: center;
@@ -327,11 +324,6 @@ li a:hover {
 
 .footer-nav li {
     padding: 0 .5em;
-}
-
-.footer-nav img {
-    width: 30px;
-    height: 30px;
 }
 
 
@@ -353,8 +345,6 @@ li a:hover {
     background-color: red;
     align-items: end;
 } */
-
-
 
 
 /* Form fills: Styling the text input */
