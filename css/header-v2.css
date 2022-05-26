@@ -1,0 +1,99 @@
+/* *{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+} */
+
+:root {
+
+    --colour-bg: #e5e9ec;
+    --colour-text: #777;
+    --colour-primary: #394149;
+    --colour-secondary: white;
+    --colour-accent: #F56526;
+
+
+    --font-primary: colfax-web, sans-serif;
+    --text-base-size: 1rem;
+    --text-scale-ratio: 1.2;
+    --text-xxl: 4rem;
+    --text-xl: 3rem;
+    --text-lg: 2rem;
+    --text-md: 1.4rem;
+}
+
+/* body = tag
+    .body = class
+     #body = id */
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #101010;
+}
+
+.inner-header {
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo-container h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: var(--font-primary);
+    font-size: 32px;
+}
+
+.logo-container h1 span{
+    font-weight: 800;
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+
+.navigation a:last-child{
+    padding-right: 0;
+
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-family: var(--font-primary);
+    font-size: 16px;
+}
