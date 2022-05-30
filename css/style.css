@@ -3,7 +3,7 @@
     --colour-bg: #e5e9ec;
     --colour-text: #777;
     --colour-primary: #394149;
-    --colour-secondary: white;
+    --colour-secondary: #ffd891;
     --colour-tertiary: #333;
     --colour-accent: #F56526;
 
@@ -30,6 +30,21 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+    line-height: 1.5em;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
 }
 
 
@@ -59,6 +74,7 @@ img {
 
 .container {
     width: 95%;
+    max-width: 70em;
     margin: 0 auto;
 }
 
@@ -74,6 +90,13 @@ img {
 }
 
 @media (min-width: 60rem){
+
+    p{
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+
     .title{
         font-size: 2.7rem;
     }
@@ -649,11 +672,14 @@ label {
 /* Hero Home */
 
 .home-hero {
+    background-color: var(--colour-bg);
     background-image: url(/assets/images/velvet_morning_gorilla.jpg);
+    max-width: 150%;
     padding: 10em 0;
-    color: var(--colour-text);
-    background-size: cover;
+    /* color: var(--colour-text); */
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -663,4 +689,65 @@ label {
     padding-top: 35vh;
     }
 
+}
+
+.home-about-textbox {
+    background-color: var(--colour-secondary);
+    padding: 3em;
+    width: 100vw;
+    margin-left: -2.5%;
+    outline: 2px solid var(--colour-primary);
+    outline-offset: -1.5em;
+    color: var(--colour-text);
+    position: relative;
+}
+
+.home-about-textbox h1{
+    color: var(--colour-primary);
+    background: var(--colour-secondary);
+    position: absolute;
+    top: .75em;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0 .145em;
+}
+
+@media (min-width: 25rem) {
+    h1{
+        font-size: 2.5 rem;
+    }
+
+    .home-about-textbox h1{
+        top: .4em;
+        padding: 0 .325em; 
+    }
+}
+
+
+@media (min-width: 60rem) {
+    h1{
+        font-size: 2.5 rem;
+    }
+
+    .home-about {
+        background-color: var(--colour-secondary);
+        padding-bottom: 10em;
+    }
+
+    .home-about-textbox {
+        width: 50%;
+        padding: 7em;
+        outline-offset: -3.75em;
+        margin-left: -2.5%;
+        top: -1em;
+        text-align: left;
+        box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
+    
+    }
+
+    .home-about-textbox h1{
+        top: .75em;
+        left: 6rem;
+        transform: translateX(0);
+    }
 }
