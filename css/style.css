@@ -56,7 +56,7 @@ body {
     font-size: var(--text-base-size);
     font-family: var(--font-primary);
     color: var(--colour-primary);
-
+    text-align: center;
 }
 
 .header {
@@ -800,12 +800,12 @@ label {
 .port-desc {
     position: absolute;
     z-index: 100;
-    bottom: 2em;
-    left: 3em;
-    right: 3em;
+    bottom: 0em;
+    left: 0em;
+    right: 0em;
     color: var(--colour-text-secondary);
     background: rgba(0,0,0,.75);
-    padding-bottom: 1em;
+    padding-bottom: 2em;
 }
 
 
@@ -823,5 +823,14 @@ label {
 @media (min-width: 60rem) {
     .port-item {
         width: 33.3333334%;
+        overflow: hidden;
+    }
+
+    .port-desc {
+        transform: translateY(150%);
+    }
+
+    .port-item:hover .port-desc {
+        transform: translateY(0%);
     }
 }
