@@ -2,6 +2,7 @@
 
     --colour-bg: #e5e9ec;
     --colour-text: #777;
+    --colour-text-secondary: rgb(238, 228, 208);
     --colour-primary: #394149;
     --colour-secondary: #ffd891;
     --colour-tertiary: #333;
@@ -89,15 +90,15 @@ img {
     margin: 0em 0em 0.5em 0.1em;
 }
 
-@media (min-width: 60rem){
+@media (min-width: 60rem) {
 
-    p{
+    p {
         font-size: 1.2rem;
         line-height: 1.6;
     }
 
 
-    .title{
+    .title {
         font-size: 2.7rem;
     }
 
@@ -343,9 +344,7 @@ img {
     align-items: center;
     background-color: #ffd86e;
     padding: .25em 0;
-
 }
-
 
 .main-footer-container {
     display: flex;
@@ -556,13 +555,6 @@ label {
 }
 
 
-
-
-
-
-/* ************************************************************ */
-
-
 .btn-hero {
     margin-top: 1em;
     display: inline block;
@@ -587,13 +579,30 @@ label {
 }
 
 
-
-
-.buttons {
+/* .button {
     display: flex;
     justify-content: right;
     grid-column: 1/3;
+} */
+
+
+.button {
+    display: inline-block;
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em;
 }
+
+
+@media (min-width: 60rem) {
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
 
 .btn {
     text-decoration: none;
@@ -603,9 +612,23 @@ label {
 }
 
 
+@media (min-width: 60rem) {
+    .button {
+        font-size: 1.5rem;
+    }
+}
 
 
+.button-small {
+    font-size: .7rem;
+    font-weight: 700;
+}
 
+
+.button-accent {
+    color: var(--colour-text-secondary);
+    border-color: var(--colour-accent)
+}
 
 .btn-primary:hover {
     background-color: #0E64E4;
@@ -683,10 +706,10 @@ label {
 }
 
 
-@media (min-width: 60rem){
-    .home-hero{
-    height: 100vh;
-    padding-top: 35vh;
+@media (min-width: 60rem) {
+    .home-hero {
+        height: 100vh;
+        padding-top: 35vh;
     }
 
 }
@@ -702,7 +725,7 @@ label {
     position: relative;
 }
 
-.home-about-textbox h1{
+.home-about-textbox h1 {
     color: var(--colour-primary);
     background: var(--colour-secondary);
     position: absolute;
@@ -713,19 +736,25 @@ label {
 }
 
 @media (min-width: 25rem) {
-    h1{
+    h1 {
         font-size: 2.5 rem;
     }
 
-    .home-about-textbox h1{
+    .home-about-textbox h1 {
         top: .4em;
-        padding: 0 .325em; 
+        padding: 0 .325em;
     }
 }
 
 
 @media (min-width: 60rem) {
-    h1{
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    h1 {
         font-size: 2.5 rem;
     }
 
@@ -738,16 +767,61 @@ label {
         width: 50%;
         padding: 7em;
         outline-offset: -3.75em;
-        margin-left: -2.5%;
-        top: -1em;
+        margin-left: 25.5%;
+        /* top: -1em; */
         text-align: left;
-        box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
-    
+        box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
+
     }
 
-    .home-about-textbox h1{
+    .home-about-textbox h1 {
         top: .75em;
         left: 6rem;
         transform: translateX(0);
+    }
+}
+
+/* PORTFOLIO 
+================================*/
+
+.portfolio {
+    margin: 3em 0;
+}
+
+.port-item {
+    margin: 0;
+    position: relative;
+}
+
+.port-item img {
+    display: block;
+}
+
+.port-desc {
+    position: absolute;
+    z-index: 100;
+    bottom: 2em;
+    left: 3em;
+    right: 3em;
+    color: var(--colour-text-secondary);
+    background: rgba(0,0,0,.75);
+    padding-bottom: 1em;
+}
+
+
+.port-desc p {
+    margin: 0;
+}
+
+@media (min-width: 37rem) {
+    .port-item {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (min-width: 60rem) {
+    .port-item {
+        width: 33.3333334%;
     }
 }
