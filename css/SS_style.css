@@ -862,6 +862,10 @@ label {
     position: relative;
 }
 
+.featured-item p {
+    color: var(--colour-bg);
+}
+
 .featured-item img {
     display: block;
 }
