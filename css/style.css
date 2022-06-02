@@ -101,6 +101,19 @@ p:last-of-type {
     margin-bottom: 0;
 }
 
+.featured-albums h1 {
+    font-size: 1.75em;
+    margin: 1em;
+    color: var(--colour-bg);
+}
+
+
+.featured-albums p {
+    font-size: 1.4em;
+    margin: 1em;
+    color: var(--colour-bg);
+}
+
 
 body {
     background-color: var(--colour-bg);
@@ -131,6 +144,16 @@ body {
 }
 
 
+.view-album-btn-container{
+    margin-top: 10em;
+}
+
+.aotw-container {
+    width: 95%;
+    max-width: 70em;
+    margin: 0 auto;
+
+}
 
 
 .container {
@@ -150,6 +173,11 @@ body {
     padding-right: 20px;
 }
 
+
+.product-page-container {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
 
 .row{
     display: flex;
