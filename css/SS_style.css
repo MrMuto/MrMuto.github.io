@@ -1,7 +1,7 @@
 :root {
 
     --colour-bg: #e5e9ec;
-    --colour-text: rgb(68, 68, 68);
+    --colour-text: #777;
     --colour-text-secondary: rgb(238, 228, 208);
     --colour-primary: #394149;
     --colour-secondary: #ffd891;
@@ -50,7 +50,7 @@ html {
 }
 
 
-.col-1 {
+.col-1{
     width: 33.3333334%;
     float: left;
 }
@@ -62,7 +62,7 @@ html {
         float: left;
         padding: 0 .5em;
     }
-
+    
 
     [class^=col-]:first-child {
         padding-left: 0;
@@ -120,277 +120,17 @@ body {
     width: 100%;
 }
 
-/* img {
-    width: 100%;
-    height: auto;
-} */
 
-.featured-albums img {
-    width: 100%;
+img {
+    max-width: 100%;
     height: auto;
 }
-
-
-
 
 .container {
     width: 95%;
     max-width: 70em;
     margin: 0 auto;
 }
-
-
-/**********************  Individual Product Page  ***********************/
-
-
-.small-container {
-    max-width: 1000px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 20px;
-}
-
-
-.row{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-
-.single-product {
-    margin-top: 80px;
-}
-
-.small-img-row {
-    display: flex;
-    justify-content: end;
-}
-
-.col-2 img {
-    max-width: 100%;
-    padding: 50px 0;
-}
-
-.small-img-col {
-    flex-basis: 24%;
-    cursor: pointer;
-}
-
-.single-product .col-2 img{
-    padding: 0;
-}
-
-
-.single-product .col-2 {
-    padding: 20px; 
-}
-
-.col-2 {
-    flex-basis: 50%;
-    min-width: 300px;
-}
-
-.col-2 h1{
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
-}
-
-.single-product select{
-    display: block;
-    padding: 1em;
-}
-
-.single-product h4 {
-    margin: 20px 0;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-
-.single-product input {
-    width: 50px;
-    height: 40px;
-    padding-left: 10px;
-    font-size: 20px;
-    margin-right: 10px;
-    border: 10px solid hotpink;
-    
-}
-
-
-input:focus {
-    outline:none;
-
-}
-
-
-a {
-    text-decoration: none;
-    color: var(--colour-primary);
-}
-
-.single-product .fa {
-    color: var(--colour-accent);
-    margin-left: 10px;
-}
-
-p{
-    color: var(--colour-text);
-}
-
-.btn{
-    display: inline-block;
-    background: hotpink;
-    color: red;
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: background 0.5s; 
-}
-
-
-/**********************  New Product Layout (Search Page)  ***********************/
-
-
-.stacked {
-    display: grid;
-}
-
-.stacked>* {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.prod-container {
-    max-width: 100rem;
-    margin-inline: auto;
-    padding-inline: 2rem;
-}
-
-.product-grid {
-    display: grid;
-    gap: .125rem;
-    grid-template-columns:
-        repeat(auto-fit, minmax(15rem, 1fr))
-        /* Giving the cards a minimum and maximum size for responsiveness */
-}
-
-.card {
-    aspect-ratio: 1 / 1.5;
-    /* border: 3px solid hotpink; */
-}
-
-.card__content {
-    background: white;
-    align-self: end;
-    margin: .5rem .5rem 2rem;
-    padding: .5rem;
-    box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .1);
-}
-
-
-.card__title {
-    font-size: 1rem;
-    line-height: 1.1;
-    color: var(--colour-text);
-}
-
-.card__price {
-    color: var(--colour-tertiary);
-    font-size: 1.25rem;
-}
-
-
-.card__img {
-    width: 100%;
-    aspect-ratio: 1 / 1.25;
-    object-fit: cover;
-}
-
-@media(min-width: 40em){
-
-    .card__img{
-        aspect-ratio: 1 / 1;
-    }
-
-    .card.featured {
-    grid-row: span 2;
-    grid-column: span 2;
-    }
-
-
-    .card.featured .card__img {
-    aspect-ratio: 1 / 1.25;
-    }
-
-
-    .card.featured .card__title {
-    font-size: 1.75rem;
-    }
-}
-
-/* .prod-container {
-    max-width: 100rem;
-    margin-inline: auto;
-    padding-inline: 2rem;
-  }
-  
-  .stacked {
-    display: grid;
-  }
-  
-  .stacked > * {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-  
-  .product-grid {
-    display: grid;
-    gap: 0.125rem;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  }
-  
-  .card {
-    aspect-ratio: 1 / 1.5;
-    /* border: 3px solid hotpink;
-  }
-  
-  .card__content {
-    background: white;
-    align-self: end;
-    margin: 0.5rem 0.5rem 2rem;
-    padding: 0.5rem;
-    box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 0.1);
-  }
-  
-  .card__title {
-    font-size: 1.25rem;
-    line-height: 1.1;
-    color: firebrick;
-  }
-  
-  .card__price {
-    font-size: 1.75rem;
-  }
-  
-  .card__img {
-    width: 100%;
-    aspect-ratio: 1 / 1.25;
-    object-fit: cover;
-  } */
-
-
-/********************** END New Product Layout (Search Page)  END ***********************/
-
-
-
-
-
-
-
 
 .clearfix::after,
 .section::after,
@@ -670,7 +410,6 @@ footer::after {
 
 
 
-
 /* Form fills: Styling the text input */
 
 input,
@@ -854,8 +593,11 @@ label {
 
 }
 
-
-
+.btn-secondary {
+    background-color: var(--colour-secondary);
+    border: 2px solid var(--colour-primary);
+    color: var(--colour-primary);
+}
 
 .btn-primary--accent {
     background-color: var(--colour-accent);
@@ -985,25 +727,13 @@ label {
     box-shadow: 0px 0px 5px #adceff;
 }
 
-
-
-
 .btn-secondary {
-    display: inline-block;
-    font-size: 1.15rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-width: 2px;
-    border-style: solid;
-    padding: .5em 1.75em;
-    background-color: var(--colour-secondary);
-    border: 2px solid var(--colour-primary);
-    color: var(--colour-primary);
+    background-color: #F3F8FF;
+    color: #67A3FF;
 }
 
-
 .btn-secondary:hover {
-    background-color: #f59518;
+    background-color: #E8F1FF;
 }
 
 .btn-secondary--hover {
@@ -1186,59 +916,11 @@ label {
 
 /* ============================== Footer ====================================*/
 
+
 footer {
     background: var(--colour-secondary);
     text-align: left;
     padding: 5em 0;
 }
 
-.main-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    align-items: center;
-    background-color: #ffd86e;
-    padding: .25em 0;
-}
 
-.main-footer-container {
-    display: flex;
-    align-items: center;
-}
-
-.main-footer-container ul {
-    flex-grow: 1;
-    text-align: start;
-}
-
-.footer-nav li {
-    padding: 0 .5em;
-}
-
-
-footer {
-    background: var(--colour-accent);
-    padding: 3em 1em;
-    color: white;
-    display: flex;
-}
-
-footer a {
-    color: inherit;
-}
-
-.footer-nav {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.footer-nav a {
-    padding: .75em;
-    text-decoration: none;
-}
-
-.footer-nav a:hover {
-    text-decoration: underline;
-
-}
