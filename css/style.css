@@ -173,6 +173,12 @@ body {
     margin: 0 auto;
 }
 
+.checkout-container {
+    /* margin: 10em 5em 10em 10em; */
+    margin: 12em 9em 16em 28em;
+    background-color: red;
+}
+
 
 /**********************  Individual Product Page  ***********************/
 
