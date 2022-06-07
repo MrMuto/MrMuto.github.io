@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redesign</title>
+    <title>Index</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
 
@@ -18,19 +18,23 @@
 <!-- <input type="search"> -->
 
 <body>
+   
 
     <header class="header">
         <h1 class="logo">
             <a href="index.html"><img src="/assets/icons/oz_music_logo.png" alt=""></a>
         </h1>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
-
+    
         <nav class="nav">
             <ul>
-                <li><a href="">Home</a></li>
+                <li><a href="/main/index.html">Home</a></li>
                 <li><a href="">About</a></li>
-                <li><a href="search-page.html">Shop</a></li>
+                <li><a href="/main/search-page.html">Shop</a></li>
                 <li><a href="">Contact</a></li>
+                <li><a href=""><ion-icon name="cart-outline"></ion-icon></a></li>
+                <li><a href=""><ion-icon name="person-outline"></ion-icon></ion-icon></a></li>
+                
             </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
@@ -38,22 +42,31 @@
         </label>
     </header>
 
+
+
     <section class="home-hero">
+
         <div class="aotw-container">
             <h1 class="title">Album of the Week
             </h1>
-        </div> 
+        </div>
+        
+
         <div class="view-album-btn-container">
             <a href="indv-prod-pg.html" class="btn-hero btn-hero-accent">View Album</a>
-        </div> 
+        </div>
+
     </section>
 
-    <!-- <section class="home-about">
+    <section class="home-about">
         <div class='home-about-textbox'>
-            <h1>Vinyl LP Records</h1>
-            <p>New and Used CD's, Vinyl Records and Music Memorabilia</p>
+            <h1>Oz Music Online</h1>
+            <p>Rare records covering most styles and eras.
+                Rare and Out of print CD's.
+                New CD's,including small independent labels and a selection of discounted mainstream releases.
+                Music videos/books/magazines and memorabilia.</p>
         </div>
-    </section> -->
+    </section>
 
     <section class="featured-albums">
         <h1>Featured Albums</h1>
@@ -139,7 +152,7 @@
                 <p>Specialist dealer in Rare and Collectable Vinyl Records, Out Of Print CD's and Music Memorabilia.We
                     offer
                     a large selection of items from the 1950's 1960's 1970's 1980's 1990's and 2000's.
-                     <!-- Genres include:
+                    <!-- Genres include:
                     Rock
                     - Pop - Soul - Funk - Dance - Alternative - Indie - Metal - Punk - Psych - Progressive - Jazz - Beat
                     -
@@ -158,7 +171,7 @@
                 <a href="#"><img class="social-icon" src="/assets/icons/icons8-twitter-24.png" alt=""></a>
                 <a href="#"><img class="social-icon" src="/assets/icons/icons8-mail-30.png" alt=""></a>
 
-            </p>
+                </p>
             </div>
 
 
@@ -193,9 +206,12 @@
                     <li>Placeholder</li>
                 </ul>
             </div>
-            </div>
+        </div>
     </footer>
-    
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
 </body>
 

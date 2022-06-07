@@ -152,7 +152,7 @@ body {
 
 
 .view-album-btn-container {
-    margin-top: 23em;
+    margin-top: 21em;
 }
 
 
@@ -164,7 +164,8 @@ body {
 
 
 .aotw-container h1 {
-    color: var(--colour-text-secondary);
+    color: var(--colour-bg);
+    margin: 8em 0em -7em 0em;
 }
 
 .container {
@@ -196,7 +197,7 @@ body {
     padding-bottom: 5em;
 }
 
-.row{
+.row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -223,13 +224,13 @@ body {
     cursor: pointer;
 }
 
-.single-product .col-2 img{
+.single-product .col-2 img {
     padding: 0;
 }
 
 
 .single-product .col-2 {
-    padding: 20px; 
+    padding: 20px;
 }
 
 .col-2 {
@@ -237,13 +238,13 @@ body {
     min-width: 300px;
 }
 
-.col-2 h1{
+.col-2 h1 {
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
 }
 
-.single-product select{
+.single-product select {
     display: block;
     padding: 1em;
 }
@@ -262,12 +263,12 @@ body {
     font-size: 20px;
     margin-right: 10px;
     border: 10px solid hotpink;
-    
+
 }
 
 
 input:focus {
-    outline:none;
+    outline: none;
 
 }
 
@@ -282,18 +283,18 @@ a {
     margin-left: 10px;
 }
 
-p{
+p {
     color: var(--colour-text);
 }
 
-.btn{
+.btn {
     display: inline-block;
     background: hotpink;
     color: red;
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
-    transition: background 0.5s; 
+    transition: background 0.5s;
 }
 
 
@@ -348,7 +349,7 @@ p{
     font-size: 1.25rem;
 }
 
-a.card__img{
+a.card__img {
     background-color: red;
 }
 
@@ -359,25 +360,25 @@ a.card__img{
     object-fit: cover;
 }
 
-@media(min-width: 40em){
+@media(min-width: 40em) {
 
-    .card__img{
+    .card__img {
         aspect-ratio: 1 / 1;
     }
 
     .card.featured {
-    grid-row: span 2;
-    grid-column: span 2;
+        grid-row: span 2;
+        grid-column: span 2;
     }
 
 
     .card.featured .card__img {
-    aspect-ratio: 1 / 1.25;
+        aspect-ratio: 1 / 1.25;
     }
 
 
     .card.featured .card__title {
-    font-size: 1.75rem;
+        font-size: 1.75rem;
     }
 }
 
@@ -1090,6 +1091,13 @@ label {
 }
 
 
+
+
+
+
+
+
+
 @media (min-width: 60rem) {
     .home-hero {
         height: 100vh;
@@ -1107,6 +1115,7 @@ label {
     outline-offset: -1.5em;
     color: var(--colour-text);
     position: relative;
+    margin-top: 7em;
 }
 
 .home-about-textbox h1 {
@@ -1152,7 +1161,7 @@ label {
         padding: 7em;
         outline-offset: -3.75em;
         margin-left: 25.5%;
-        top: -1em;
+        top: 6vem;
         text-align: left;
         box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
 
@@ -1192,6 +1201,7 @@ label {
     background: rgba(0, 0, 0, .6);
     padding-bottom: 2em;
 }
+
 
 
 .album-desc p {
@@ -1307,78 +1317,81 @@ footer a {
     max-width: 300px;
     margin: 0 auto;
     animation: fade 250ms ease-in-out forwards;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     display: flex;
     flex-direction: column;
     margin-bottom: .5rem;
     gap: .25em;
-  }
-  
-  .form-group:last-child {
+}
+
+.form-group:last-child {
     margin: 0;
-  }
-  
-  .form-group > label {
+}
+
+.form-group>label {
     font-weight: bold;
     font-size: .8em;
     color: #333;
-  }
-  
-  .form-group > input {
+}
+
+.form-group>input {
     border: 1px solid #333;
     border-radius: .25em;
     font-size: 1rem;
     padding: .25em;
-  }
-  
-  .step-title {
+}
+
+.step-title {
     margin: 0;
     margin-bottom: 1rem;
     text-align: center;
-  }
-  
-  .card.active {
+}
+
+.card.active {
     animation: slide 250ms 125ms ease-in-out both;
-  }
-  
-  .multi-step-form {
+}
+
+.multi-step-form {
     overflow: hidden;
     position: relative;
-  }
-  
-  .hide {
-    display: none;
-  }
-  
-  @keyframes slide {
-    0% {
-      transform: translateX(200%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fade {
-    0% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    50% {
-      transform: scale(.75);
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-      transform: scale(0);
-    }
-  }
+}
 
-  .purchase-btn-container a {
+.hide {
+    display: none;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(.75);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.purchase-btn-container a {
     display: inline-block;
     font-size: 1.15rem;
     text-decoration: none;
@@ -1386,4 +1399,4 @@ footer a {
     border-width: 2px;
     border-style: solid;
     padding: .5em 1.75em;
-  }
+}
