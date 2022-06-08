@@ -727,43 +727,6 @@ footer::after {
 }
 
 
-
-
-/* Form fills: Styling the text input */
-
-
-
-input,
-textarea,
-select {
-    width: 20em;
-    padding: 0.90em;
-    border-radius: 0.2em;
-    border: 1px rgb(170, 170, 170) solid;
-    background-color: white;
-    vertical-align: middle;
-}
-
-
-.textInput {
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
-    font-size: 0.9rem;
-}
-
-
-form {
-    margin: auto;
-    width: 15em;
-    display: inline-flexbox;
-    grid-template-columns: 200px 1fr;
-}
-
-label {
-    display: block;
-    margin-top: 0;
-}
-
 #secure-icon {
     width: 5em;
     height: 5em;
@@ -915,8 +878,6 @@ label {
 }
 
 
-
-
 .btn-primary--accent {
     background-color: var(--colour-accent);
     border-color: var(--colour-accent);
@@ -984,22 +945,6 @@ label {
     }
 }
 
-
-/* .btn {
-    text-decoration: none;
-    padding: 0.75rem 2rem;
-    border-radius: 2rem;
-    font-size: 0.9rem;
-} */
-
-
-@media (min-width: 60rem) {
-    .button {
-        font-size: 1.5rem;
-    }
-}
-
-
 .button-small {
     font-size: .7rem;
     font-weight: 700;
@@ -1066,9 +1011,9 @@ label {
     background-color: #f59518;
 }
 
-.btn-secondary--hover {
+/* .btn-secondary--hover {
     background-color: #E8F1FF;
-}
+} */
 
 .btn-secondary:active {
     background-color: #DBEAFF;
@@ -1313,15 +1258,65 @@ footer a {
 /* ============================== *END* Footer *END*====================================*/
 
 
-/* 
-.card {
+
+
+
+
+/* ============================== *START*  Checkout *START* ====================================*/
+
+
+
+/* Form fills: Styling the text input */
+
+
+
+input,
+textarea,
+select {
+    width: 20em;
+    padding: 0.90em;
+    border-radius: 0.2em;
+    border: 1px rgb(170, 170, 170) solid;
     background-color: white;
+    vertical-align: middle;
+}
+
+
+.textInput {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
+form {
+    margin: auto;
+    width: 15em;
+    display: inline-flexbox;
+    grid-template-columns: 200px 1fr;
+}
+
+label {
+    display: block;
+    margin-top: 0;
+}
+
+
+.checkout-card {
+    background-color: var(--colour-bg);
     border: 1px solid #333;
     border-radius: .5rem;
     padding: .5rem;
-    max-width: 300px;
+    /* max-width: 300px; */
     margin: 0 auto;
     animation: fade 250ms ease-in-out forwards;
+}
+
+form {
+    margin: auto;
+    width: 15em;
+    display: inline-flexbox;
+    grid-template-columns: 200px 1fr;
 }
 
 .form-group {
@@ -1346,6 +1341,7 @@ footer a {
     border-radius: .25em;
     font-size: 1rem;
     padding: .25em;
+    width: 14em;
 }
 
 .step-title {
@@ -1354,7 +1350,7 @@ footer a {
     text-align: center;
 }
 
-.card.active {
+.checkout-card.active {
     animation: slide 250ms 125ms ease-in-out both;
 }
 
@@ -1396,12 +1392,13 @@ footer a {
     }
 }
 
-.purchase-btn-container a {
-    display: inline-block;
-    font-size: 1.15rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-width: 2px;
-    border-style: solid;
-    padding: .5em 1.75em;
-} */
+
+.shipping-method-radios {
+    margin: 1em 3em 1em -3em;
+}
+
+.confirmation-check {
+    width: 10em;
+    height: 10em;
+}
+

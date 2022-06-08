@@ -46,7 +46,6 @@ function purchaseClicked() {
 
 function purchaseClicked(){
         alert('Thank you for your purchase')
-        // LINK THIS TO PAYMENTS PAGE //
         var cartItems = document.getElementsByClassName('cart-items')[0]
         while(cartItems.hasChildNodes()) {
             cartItems.removeChild(cartItems)
@@ -69,7 +68,6 @@ function quantityChanged(event) {
     }
     updateCartTotal()
 }
-
 
 
 function addToCartClicked(event) {
@@ -109,9 +107,6 @@ function addItemtoCart(title, price, imageSrc) {
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
-
-
-
 
 
 function updateCartTotal() {

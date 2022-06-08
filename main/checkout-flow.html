@@ -17,7 +17,7 @@
   <form data-multi-step class="multi-step-form">
 
 
-    <div class="card" data-step>
+    <div class="checkout-card" data-step>
 
       <h3 class="step-title">1. Billing Information</h3>
 
@@ -63,38 +63,44 @@
           <input type="text" class="textInput" id="last-name-id" name="last-name" />
         </div>
 
-        <button type="button" data-next>Next</button>
+        <button class='btn-secondary btn-secondary-accent' type="button" data-next>Next</button>
 
 
     </div>
 
 
-    <div class="card" data-step>
+    <div class="checkout-card" data-step>
       <h3 class="step-title">2. Shipping Method</h3>
-      <fieldset>
+
+
+      <fieldset class="shipping-method-radios">
+
         <div>
           <input type="radio" id="methodChoice1" name="delivery" value="billing-address">
-          <label for="methodChoice1">Billing Address</label><br>
+          <label for="methodChoice1">Standard Shipping</label><br>
 
           <input type="radio" id="methodChoice2" name="delivery" value="different-address">
-          <label for="methodChoice2">Different Address</label><br>
+
+
+          <label for="methodChoice2">Express Shipping</label><br>
 
           <input type="radio" id="methodChoice3" name="delivery" value="multiple-addresses">
-          <label for="methodChoice3">Multiple Addressess</label><br>
+          <label for="methodChoice3">Pickup</label><br>
         </div>
+
       </fieldset>
 
-      <div>
+      <div class='container-signature-radio'>
         <label for="signature-required">Signature not required on delivery</label>
         <input type="checkbox" />
       </div>
 
-      <button type="button" data-previous>Previous</button>
-      <button type="button" data-next>Next</button>
+      <button class='btn-primary btn-primary-accent' type="button" data-previous>Previous</button>
+      <button class='btn-secondary btn-secondary-accent' type="button" data-next>Next</button>
 
     </div>
 
-    <div class="card" data-step>
+    <div class="checkout-card" data-step>
 
       <h3 class="step-title">3. Payment Information</h3>
 
@@ -118,30 +124,36 @@
         <input type="text" class="textInput" id="last-name-id" name="last-name" />
       </div>
 
-      <button type="button" data-previous>Previous</button>
-      <button type="button" data-next>Confirm and Process Order</button>
+      <button class='btn-primary btn-primary-accent' type="button" data-previous>Previous</button>
+      <button class='btn-secondary btn-secondary-accent' type="button" data-next>Confirm and Process Order</button>
 
     </div>
 
 
-    <div class="card" data-step>
+    <div class="checkout-card" data-step>
 
-      <h3 class="step-title">Order Confirmation</h3>
+      <h3 class="step-title"></h3>
 
       <section>
         <p>
-          Your order has been received
-          <a href="mailto:orders@example.com">orders@example.com</a>.
+          Thank you. Your order has been received.
+
+
+          <!-- <a href="mailto:orders@example.com">ozmus@bigpond.net.au</a>. -->
 
         </p>
-        <a href="/main/index.html" class="button button-accent">To Homepage</a>
+
+        <ion-icon class="confirmation-check" name="checkmark-circle-outline"></ion-icon>
+
+        <a href="/main/index.html" class="btn-secondary btn-secondary-accent">To Homepage</a>
 
         <!-- <button type="button" data-next>Back to Homepage</button> -->
       </section>
 
     </div>
 
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
 </body>
