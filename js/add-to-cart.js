@@ -32,7 +32,7 @@ function ready() {
 }    
 
 function purchaseClicked() {
-    alert('Thank you for your purchase. You will now be redirected to our secure payment portal.') //This needs to be linked to Payment Methods//
+    alert('Redirecting to secure payment portal. Press OK to continue.') //This needs to be linked to Payment Methods//
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
@@ -42,18 +42,6 @@ function purchaseClicked() {
 
 }
 
-{
-
-function purchaseClicked(){
-        alert('Thank you for your purchase')
-        var cartItems = document.getElementsByClassName('cart-items')[0]
-        while(cartItems.hasChildNodes()) {
-            cartItems.removeChild(cartItems)
-        }
-    }
-
-    
-}
 
 function removeCartItem(event) {
     var buttonClicked = event.target

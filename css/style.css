@@ -1,7 +1,7 @@
 :root {
 
     --colour-bg: #e5e9ec;
-    --colour-text: rgb(68, 68, 68);
+    --colour-text: #444444;
     --colour-text-secondary: rgb(238, 228, 208);
     --colour-primary: #394149;
     --colour-secondary: #ffd891;
@@ -244,10 +244,11 @@ img {
 }
 
 .col-2 h1 {
-    font-size: 50px;
+    font-size: 30px;
     line-height: 60px;
     margin: 25px 0;
 }
+
 
 .single-product select {
     display: block;
@@ -303,6 +304,13 @@ p {
 }
 
 
+@media (max-width: 820px) {
+    .col-2 img {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
 /*===========================  New Product Layout (Search Page)  =========================== */
 
 
@@ -320,6 +328,7 @@ picture {
 }
 
 /* Inherit fonts for inputs and buttons */
+
 input,
 button,
 textarea,
@@ -702,10 +711,10 @@ footer::after {
 }
 
 
-#trackInfo ul {
+#trackInfo ul li {
     padding: 0px;
     list-style-type: none;
-
+    margin-left: 20px;
 }
 
 .album-about {
@@ -733,6 +742,7 @@ footer::after {
 }
 
 /********    START   Shopping Cart   START    **********/
+
 
 .shop-item {
     margin: 30px;
@@ -865,6 +875,10 @@ footer::after {
     color: #333;
     font-size: 1.1em;
 }
+
+
+
+
 
 /********   END    Shopping Cart   END    **********/
 
@@ -1269,7 +1283,6 @@ footer a {
 /* Form fills: Styling the text input */
 
 
-
 input,
 textarea,
 select {
@@ -1280,6 +1293,22 @@ select {
     background-color: white;
     vertical-align: middle;
 }
+
+
+@media (max-width: 375px) {
+
+    input,
+    textarea,
+    select {
+        width: 20em;
+        border-radius: 0.2em;
+        padding: 0em;
+        border: 1px rgb(170, 170, 170) solid;
+        vertical-align: middle;
+    }
+}
+
+
 
 
 .textInput {
@@ -1401,4 +1430,3 @@ form {
     width: 10em;
     height: 10em;
 }
-
