@@ -11,8 +11,8 @@
     <title>Oz Music Online Redesign</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="/js/add-to-cart.js" async ></script>
-</head> 
+    <script src="/js/add-to-cart.js" async></script>
+</head>
 
 <body>
 
@@ -20,14 +20,21 @@
         <h1 class="logo">
             <a href="index.html"><img src="/assets/icons/oz_music_logo.png" alt=""></a>
         </h1>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
         <nav class="nav">
             <ul>
-                <li><a href="">Home</a></li>
+                <li><a href="/main/index.html">Home</a></li>
                 <li><a href="">About</a></li>
-                <li><a href="">Blog</a></li>
+                <li><a href="/main/search-page.html">Shop</a></li>
                 <li><a href="">Contact</a></li>
+                <li><a href="">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="person-outline"></ion-icon>
+                        </ion-icon>
+                    </a></li>
+
             </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
@@ -38,14 +45,15 @@
     <section class="container content-section">
         <div class="shop-items">
             <div class="shop-item">
-                <span class="shop-item-title">Aphelion EP by Ross From Friends</span>
-
+                <span class="shop-item-title">Aphelion EP</span>
                 <img class="shop-item-image" src="/assets/images/ross-from-friends-aphelion-ep.jpg">
                 <div class="shop-item-details">
                     <span class="shop-item-price">$29.99</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    <button class="btn-primary btn-primary-accent" type="button">ADD TO CART</button>
                 </div>
             </div>
+        </div>
+    </section>
 
     <section class="container content-section">
         <h2 class="section-header">CART</h2>
@@ -54,15 +62,21 @@
             <span class="cart-price cart-header cart-column">PRICE</span>
             <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
-     
+        <div class="cart-items">
+            <!-- This div empty, but gets populated with a html in the JS file.  'var cartRowContents' (line 83)
+        its messy but sort of works -->
+        </div>
         <div class="cart-total">
             <strong class="cart-total-title">Total</strong>
             <span class="cart-total-price">$0</span>
         </div>
-   
+
         <a class="btn btn-primary btn-purchase" href="/main/checkout.html">PURCHASE</a>
- 
     </section>
 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
