@@ -32,7 +32,7 @@ function ready() {
 }    
 
 function purchaseClicked() {
-    alert('Redirecting to secure payment portal. Press OK to continue.') 
+    alert('Redirecting to secure payment portal. Press OK to continue.') //This needs to be linked to Payment Methods//
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
